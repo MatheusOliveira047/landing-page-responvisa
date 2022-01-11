@@ -1,0 +1,260 @@
+/*Variáveis*/
+:root {
+    --bgSite: #d7d4ff;
+    --buttonColor: #6c63ff;
+  
+    --white: #ffffff;
+    --white300: #f9f9f9;
+  
+    --title: #2b2b2b;
+    --text: #555555;
+  }
+  
+  /*Reset*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button,
+  input {
+    border: 0;
+  }
+  button:focus,
+  input:focus {
+    border: 0;
+  }
+
+  
+  header{
+      background: var(--bgSite);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60vh;
+      width: 100%;
+      flex-wrap: wrap;
+
+  }
+  header .text-header{  
+    width: 30%;
+    margin: 0 40px;
+    padding: 40px;
+  }
+
+  header .text-header h1 , header .text-header p{
+    margin-bottom: 30px;
+   
+  }
+  header .text-header p{
+    color: var(--text);
+    line-height: 25px;
+    font-family: 'Lato', sans-serif;
+  }
+  header .text-header button{ 
+    padding: 8px 25px;
+      background-color: var(--buttonColor);
+      color: var(--white300);
+      font-family: 'Lato', sans-serif;
+  }
+  header img{
+      width: 30%;
+      margin: 0 80px;
+  }
+.boxes{
+    background-color:#b8b6da ;
+    display: flex;
+    height: auto;
+    width: 100%;
+
+}  
+.boxes .box-margim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 70px 80px;
+}
+.boxes .box{
+    width: 26%;
+    margin: 40px;
+    
+    
+}
+.boxes .box .color1{
+    background-color: red;
+}
+.boxes .box .color2{
+    background-color: aqua;
+}
+.boxes .box .color3{
+    background-color: plum;
+}
+.boxes .box .color4{
+    background-color: greenyellow;
+}
+.boxes .box .color5{
+    background-color: orange;
+}
+.boxes .box .color6{
+    background-color: darkcyan;
+}
+.boxes .box .box-text{
+    background-color: var(--white);
+    padding: 10px;
+}
+.boxes .box .color , .boxes .box .box-text{
+    height: 200px;
+    width: 300px;
+}
+.boxes .box-margim .box h2{
+    margin: 10px 0;
+}
+.boxes .box-margim .box p{
+    color: var(--text);
+    line-height: 25px;
+}
+
+section{
+    background-color: var(--bgSite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section .form{
+    width: 450px;
+    margin: 20px 0;
+    text-align: center;
+}
+section .form form h2{
+    margin: 50px 0;
+}
+
+section form .button{
+    background-color: var(--buttonColor);
+    color: var(--white);
+}
+section form input , textarea{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+   
+}
+
+
+@media (max-width:1024px){
+    header .text-header , header img{
+        width: 80%;
+        height: 40%;
+    }
+    .boxes .box-margim{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        margin: 70px 0;
+    }
+    .boxes .box-margim .box{
+        width: 40%;
+    }
+}
+
+@media (max-width:724px){
+    header .text-header , header img{
+        width: 80%;
+        height: 40%;
+    }
+    .boxes .box-margim{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        margin: 70px 0;
+        width: 100%;
+    }
+    .boxes .box-margim .box{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .boxes .box-margim .box .box-text,  .boxes .box-margim .box .color{
+        width: 80%;
+    }
+}
+
+@media (max-width:450px){
+    header{
+        height: auto;
+    }
+    header .text-header , header img{
+        width: 95%;
+        height: 30%;
+        margin: 0 20px;
+    }
+    header img{
+        padding-bottom: 50px;
+    }
+    .boxes .box-margim{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        margin: 30px 0;
+        width: 100%;
+    }
+    .boxes .box-margim .box{
+        margin: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .boxes .box-margim .box .box-text,  .boxes .box-margim .box .color{
+        width: 100%;
+        margin: 0;
+    }
+
+    section .form{
+        width: 80%;
+    }
+}
